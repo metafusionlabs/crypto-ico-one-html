@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Crypto Currency Website</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+   <link rel="stylesheet" href="assets/css/main.css" />
+   <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+   <!-- Header Start-->
+   <header class="header-area">
+      <div class="container">
+         <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="logo" />
+               </a>
+               <div class="d-flex align-items-center">
+                  <div class="search-icon cursor mobile-search-view" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                  </div>
+                  <button class="navbar-toggler icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                     aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="icon-bar"><i class="fa fa-bars" aria-hidden="true"></i>
+                     </span>
+                  </button>
+               </div>
+               <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mx-auto nav-bg" id="outside-click">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">ICO</a>
+                     </li>
+                      
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Tokenomics</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Roadmap</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Coin Listings</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                     </li>
+                     
+                  </ul>
+                    
+                  <div class="header-right d-flex align-items-center">
+                      
+                     <a href="#" class="primary-btn">Connect Wallet</a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+ 
+      <!-- Header End -->
+      <!-- Hero Start-->
+      <section class="hero-section position-relative">
+         <div class="ellipse ellipse-1"></div>
+         <div class="ellipse ellipse-2"></div>
+         <div class="container">
+            <div class="row align-items-center gy-5">
+               <div class="col-lg-9">
+                  <div class="hero-left-box">
+                     <div class="common-heading-section">
+                        <h2 class="text-white mb-20">Your Gateway to the Future of <span class="color-f9">Cryptocurrency</span></h2>
+                        <p class="mt-20">Discover the most promising ICOs and top-performing cryptocurrencies to kickstart your journey into the world of crypto today!</p>
+                     </div>
+                     <!-- <div class="auto-join d-flex align-items-center g-20 mt-40 justify-content-center justify-content-lg-start flex-wrap">
+                        <div class="google-join text-center text-sm-start">
+                           <p>Or Continue with </p>
+                           <ul class="d-flex align-items-center g-15 mt-15">
+                              <li><a href="#" class="btn-sm"><img src="assets/images/icon/google.svg" alt="icon">Google</a></li>
+                              <li><a href="#" class="btn-sm"><img src="assets/images/icon/apple.svg" alt="icon">Apple</a></li>
+                           </ul>
+                        </div>
+                        <div class="app-join">
+                           <p>Download App</p>
+                           <ul class="d-flex align-items-center mt-15">
+                              <li><a href="#" class="btn-sm"><img src="assets/images/icon/qu-code.svg" alt="icon">QR Code</a></li>
+                           </ul>
+                        </div>
+                     </div> -->
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="hero-thumbnail text-end zoom-animation">
+                     <img src="assets/images/thumbnails/hero-icon.png" alt="image" class="w-100 ">
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-40">
+               <div class="col-md-12">
+                  <img src="assets/images/thumbnails/hero-thumbnail.png" alt="image" class="w-100 rounded">
+               </div>
+            </div>
+            <div class="row align-items-center mt-4">
+               <div class="col-lg-7">
+                  <div class="btn-list">
+                        <ul class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                           <li class="d-inline-block"><a href="#" class="primary-btn w-auto">Join ICO <span class="rotate-50"><i class="fa-solid fa-arrow-right"></i></span></a></li>
+                           <li class="d-inline-block"><a href="#" class="secondary-btn">Learn More  </a></li>
+                        </ul>
+                     </div>
+               </div>
+               <div class="col-lg-5">
+                  <div class="coin-status d-flex align-items-center justify-content-between">
+                     <div class="coin-info d-flex align-items-center">
+                        <div class="coin-info-icon">
+                           <img src="assets/images/icon/coin.png" alt="icon" class="w-100">
+                        </div>
+                        <div class="coin-info-text">
+                           <h5>Bitcoin</h5>
+                           <p>BNB</p>
+                        </div>
+                     </div>
+                     <div class="coin-rate">
+                        <h5>$32,123.56</h5>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Hero End -->
+       <section class="ico-section mt-100 position-relative">
+         <div class="ico-circle-box rotate-box">
+            <img src="assets/images/bg/circle.png" alt="">
+         </div>
+         <div class="container">
+            <div class="row align-items-center gy-5">
+               
+               <div class="col-lg-6">
+                  <div class="ecm-information text-center text-lg-start">
+                     <div class="common-heading-section">
+                        <h3>Secure Your Spot in the Future</h3>
+                        <p>Join the revolution now! Invest early in promising projects and unlock maximum potential returns with exclusive token offers.</p>
+                     </div>
+                     <div class="ico-address mt-30">
+                        <h5>ECM Contact Address</h5>
+                        <p>OxcAEG6EBAceF456e5A942afb40Fc99F2F38639eF01</p>
+                     </div>
+                      <div class="btn-list mt-40">
+                        <ul class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                           <li class="d-inline-block"><a href="#" class="primary-btn w-auto">Import ECM <img src="assets/images/icon/import.png" alt="img"></a></li>
+                           <li class="d-inline-block"><a href="#" class="secondary-btn">Whitepaper <img src="assets/images/icon/download.png" alt="img"> </a></li>
+                        </ul>
+                     </div>
+                     <!-- <div class="ico-thumbnail mt-40 col-lg-12 offset-lg-0 offset-md-2 col-md-8">
+                        <img src="assets/images/thumbnails/ico-thumbnail.png" alt="img" class="w-100 rounded">
+                     </div> -->
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="ico-box">
+                     <div class="card-bg">
+                        <div class="ecm-header">
+                           <ul class="d-flex align-items-center justify-content-between flex-wrap g-10">
+                              <li>
+                                 <p>Stage 7/10 : 1285.565 ECM</p>
+                              </li>
+                              <li>
+                                 <p>Max : 3350000.0 ECM</p>
+                              </li>
+                           </ul>
+                           <div class="ico-progress mt-20">
+                              <div class="progress">
+                                 <div class="progress-bar align-items-end" role="progressbar" style="width:60%;"
+                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>60%</span></div>
+                              </div>
+                           </div>
+                            
+                           <ul class="d-flex justify-content-center mt-20">
+                              <li>
+                                 <p class="font-24">1 ECM = 0.0004 ETH</p>
+                              </li>
+                           </ul>
+                           
+                        </div>
+                        <div class="line-1 mt-15"></div>
+                        <div class="d-flex flex-column g-8 mt-20">
+                              <div class="input-group d-flex align-items-center secondary-btn-sm">
+                                 <span id="wallet_address">Your Address</span>
+                                 <input type="text" class="form-control"
+                                    value="0xB2744291cA7dF45278CF1c9c74CF1c9c74" readonly id="wallet_address"
+                                    placeholder="Your Address" />
+                              </div>
+                              <div class="input-group d-flex align-items-center position-relative secondary-btn-sm">
+                                 <span class="color-f9" id="referral_link">Referral Link</span>
+                                 <input type="text" class="form-control"
+                                    value="0xB2744291cA7dF45278CF1c9c74CF1c9c9" readonly
+                                    id="referral_link" placeholder="Referral Link" />
+                                 <button class="text-copy-btn" type="button" id="referred_by"><i
+                                       class="far fa-copy"></i></button>
+                              </div>
+                              <div class="input-group d-flex align-items-center secondary-btn-sm">
+                                 <span  id="referred_by">Referred By</span>
+                                 <input type="text" class="form-control"
+                                    value="0xB27448291CA7dF45278CF1c9c7422D76647f6B7E" id="referred_by"
+                                    placeholder="Enter Referred Wallet" />
+                              </div>
+                              <!-- <div class="line-1 mt-20"></div> -->
+                           </div>
+                         <div class="line-1 mt-15"></div>
+                        <div class="ecm-form">
+                           <div class="common-heading-section text-center mt-15">
+                              <h5 class="text-white">ICO is Live</h5>
+                           </div>
+                           
+                           <form action="" class="d-flex flex-column mt-20 g-10">
+                              
+                                 <div class="d-flex align-items-center input-item">
+                                    <img src="assets/images/icon/ecm.png" alt="icon">
+                                    <input type="text" placeholder="ECM Amount" class="input">
+                                 </div>
+                              
+                                 <div class="d-flex align-items-center input-item">
+                                    <img src="assets/images/icon/10.png" alt="icon">
+                                    <input type="text" placeholder="ETH Payable" class="input">
+                                 </div>
+                              
+                                  
+                                 <button class="primary-btn  w-100 justify-content-center mt-20">Buy ECM
+                                 <i class="fa-solid fa-cart-shopping color-101"></i></button>
+                                 <a href="https://sepolia.etherscan.io/tx/0x41924ee204e47c6aeea1c45e8ed19f5b94bff42a55493f65665fdd8045a9abde"
+                                 target="_blank"
+                                 class="color-35 border-29 secondary-btn position-relative"> <span class="color-f9"><b>Hash:</b></span>
+                                 <span class="clip-text">0x41924ee204e47c6aeea1c45e8ed19f5b94bff42a55493f65665fdd8045a9abde</span>
+                                 <span class="external-link-icon"><i class="fas fa-external-link-alt"></i></span>
+                              </a>
+                              <div class="text-center">
+                                 <button
+                                 class="secondary-btn color-ef4 w-100 justify-content-center">Disconnect <img src="assets/images/icon/disconnect.png" alt="img">
+                               </button>
+                              </div>
+                           </form>
+                            
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="tokenomics-section mt-100 bg-animation">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-lg-6">
+                  <div class="common-heading-section">
+                     <h3>Tokenomics - The Heart of Our Ecosystem</h3>
+                     <p>Tokenomics is essential to our ecosystem, driving value, utility, and sustainability through strategic design and community engagement in token distribution.</p>
+                  </div>
+                  <div class="tokenomics-terget mt-40">
+                     <p class="mb-20">Total Supply: 100,000,000 Tokens</p>
+                     <!-- items -->
+                     <div class="tokenomics-item position-relative">
+                        <span class="tokenomics-label">Public Sale</span>
+                        <div class="tokenomice-bar"></div>
+                        <span class="tokenomice-value color-f9">50%</span>
+                     </div>
+                      <!-- items -->
+                     <div class="tokenomics-item position-relative">
+                        <span class="tokenomics-label">Team & Advisors</span>
+                        <div class="tokenomice-bar"></div>
+                        <span class="tokenomice-value color-29b">50%</span>
+                     </div>
+                      <!-- items -->
+                     <div class="tokenomics-item position-relative">
+                        <span class="tokenomics-label">Marketing & Partnerships</span>
+                        <div class="tokenomice-bar"></div>
+                        <span class="tokenomice-value color-ef4">20%</span>
+                     </div>
+                      <!-- items -->
+                     <div class="tokenomics-item position-relative">
+                        <span class="tokenomics-label">Reserve Fund</span>
+                        <div class="tokenomice-bar"></div>
+                        <span class="tokenomice-value color-290">10%</span>
+                     </div>
+                      <!-- items -->
+                     <div class="tokenomics-item position-relative">
+                        <span class="tokenomics-label">Community Rewards</span>
+                        <div class="tokenomice-bar"></div>
+                        <span class="tokenomice-value color-2ea">5%</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="tokenomics-thumbnail rotate-box">
+                     <img src="assets/images/thumbnails/tokenomics.png" alt="image" class="w-100">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="roadmap-section mt-100">
+         <div class="container">
+            <div class="row align-items-center gy-4">
+               <div class="col-lg-8 offset-lg-2">
+                  <div class="common-heading-section text-center">
+                     <h3>Our Roadmap - From Vision to Reality</h3>
+                     <p>Our roadmap outlines the critical milestones guiding us from our initial vision to successful implementation and tangible results in our project.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row mt-100">
+               <div class="col-md-12">
+                  <div class="roadmap-area">
+                     <!-- item -->
+                     <div class="roadmap-item d-flex align-items-center">
+                        <div class="roadmap-circle">
+                           <div class="roadmap-circle-inner">
+                              <h6>Q1 2024</h6>
+                           </div>
+                        </div>
+                        <div class="roadmap-body position-relative">
+                           <h5>Launch and Expansion</h5>
+                           <ul class="roadmap-list d-flex flex-column">
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="shedual-list"><i class="fa-solid fa-clock"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                           </ul>
+                           <div class="view-more-btn" data-toggle="modal" data-target="#exampleModal">
+                              <button class="secondary-btn-sm">See More</button>
+                           </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content custom-modal">
+                              <div class="modal-header">
+                                 <h5 class="modal-title text-white"> Q1 2024</h5>
+                              </div>
+                              <div class="line-1"></div>
+                              <div class="modal-body">
+                              <ul class="roadmap-list d-flex flex-column">
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              </ul>
+                              </div>
+                              <div class="line-1 mt-20"></div>
+                              <div class="modal-footer">
+                              <button type="button" class="primary-btn-sm" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                        </div>
+                     </div>
+                      <!-- item -->
+                     <div class="roadmap-item d-flex align-items-center">
+                        <div class="roadmap-circle">
+                           <div class="roadmap-circle-inner">
+                              <h6>Q2 2024</h6>
+                           </div>
+                        </div>
+                        <div class="roadmap-body position-relative">
+                           <h5>Launch and Expansion</h5>
+                           <ul class="roadmap-list d-flex flex-column">
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="shedual-list"><i class="fa-solid fa-clock"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                           </ul>
+                           <div class="view-more-btn" data-toggle="modal" data-target="#exampleModal">
+                              <button class="secondary-btn-sm">See More</button>
+                           </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content custom-modal">
+                              <div class="modal-header">
+                                 <h5 class="modal-title text-white"> Q2 2024</h5>
+                              </div>
+                              <div class="line-1"></div>
+                              <div class="modal-body">
+                              <ul class="roadmap-list d-flex flex-column">
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              </ul>
+                              </div>
+                              <div class="line-1 mt-20"></div>
+                              <div class="modal-footer">
+                              <button type="button" class="primary-btn-sm" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                        </div>
+                     </div>
+                      <!-- item -->
+                     <div class="roadmap-item d-flex align-items-center">
+                        <div class="roadmap-circle">
+                           <div class="roadmap-circle-inner">
+                              <h6>Q3 2024</h6>
+                           </div>
+                        </div>
+                        <div class="roadmap-body position-relative">
+                           <h5>Launch and Expansion</h5>
+                           <ul class="roadmap-list d-flex flex-column">
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="shedual-list"><i class="fa-solid fa-clock"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                           </ul>
+                           <div class="view-more-btn" data-toggle="modal" data-target="#exampleModal">
+                              <button class="secondary-btn-sm">See More</button>
+                           </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content custom-modal">
+                              <div class="modal-header">
+                                 <h5 class="modal-title text-white"> Q3 2024</h5>
+                              </div>
+                              <div class="line-1"></div>
+                              <div class="modal-body">
+                              <ul class="roadmap-list d-flex flex-column">
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              </ul>
+                              </div>
+                              <div class="line-1 mt-20"></div>
+                              <div class="modal-footer">
+                              <button type="button" class="primary-btn-sm" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                        </div>
+                     </div>
+                      <!-- item -->
+                     <div class="roadmap-item d-flex align-items-center">
+                        <div class="roadmap-circle">
+                           <div class="roadmap-circle-inner">
+                              <h6>Q4 2024</h6>
+                           </div>
+                        </div>
+                        <div class="roadmap-body position-relative">
+                           <h5>Launch and Expansion</h5>
+                           <ul class="roadmap-list d-flex flex-column">
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="shedual-list"><i class="fa-solid fa-clock"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                           </ul>
+                           <div class="view-more-btn" data-toggle="modal" data-target="#exampleModal">
+                              <button class="secondary-btn-sm">See More</button>
+                           </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content custom-modal">
+                              <div class="modal-header">
+                                 <h5 class="modal-title text-white"> Q4 2024</h5>
+                              </div>
+                              <div class="line-1"></div>
+                              <div class="modal-body">
+                              <ul class="roadmap-list d-flex flex-column">
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                                 <li><span class="check-list"><i class="fa-regular fa-circle-check"></i></span> Introduced ECM coin functionality and secured multi-platform integration.</li>
+                              </ul>
+                              </div>
+                              <div class="line-1 mt-20"></div>
+                              <div class="modal-footer">
+                              <button type="button" class="primary-btn-sm" data-dismiss="modal">Close</button>
+                              </div>
+                           </div>
+                        </div>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="about-us-section mt-100 bg-animation">
+         <div class="container">
+            <div class="row gy-4 gx-5 align-items-center">
+               <div class="col-lg-6">
+                  <div class="common-heading-section">
+                     <h3>About Us - Powering the Future of Crypto</h3>
+                     <p>We are a team of blockchain innovators, developers, and visionaries, building a platform to revolutionize cryptocurrency investments and adoption.</p>
+                     <p class="mt-10">Our goal is to bridge the gap between investors and emerging blockchain projects through trusted ICOs and coin listings.</p>
+                  </div>
+                  <div class="d-inline-block mt-40">
+                     <a href="#" class="primary-btn w-auto">Learn More <span class="rotate-50"><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="about-us-thumbnail position-relative">
+                     <img src="assets/images/thumbnails/about.png" alt="image" class="w-100 rounded">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+     <section class="trade-info-section mt-100 position-relative">
+      <div class="ellipse ellipse-3"></div>
+      <div class="ellipse ellipse-4"></div>
+      <div class="ellipse ellipse-5"></div>
+      <div class="container">
+         <div class="row align-items-center gy-4">
+            <div class="col-lg-8 offset-lg-2">
+               <div class="common-heading-section text-center">
+                  <h3>Coin Listing Table</h3>
+                  <p>Explore our comprehensive coin listing table featuring detailed insights, live prices, market trends, and performance of top cryptocurrencies.</p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="table-card mt-70">
+                  <div class="clients-trading-table coin_infoContent">
+                     <table class="data-show-table mobile-view-table w-100 ">
+                        <thead>
+                          <tr>
+                            <th class="text-start"><b>Coin</b></th>
+                            <th class="text-start"><b>Name</b></th>
+                            <th class="text-start"><b>Price</b></th>
+                            <th class="text-start"><b>24h Change</b></th>
+                            <th class="text-start"><b>Market Cap</b></th>
+                            <th class="text-start"><b>Volume (24h)</b></th>
+                            <th class="text-start"><b>Action</b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/btc.png" alt="images">
+                                 <span>BTC</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              Bitcoin
+                           </td>
+                           <td class="text-start">
+                              $60,000
+                           </td>
+                           <td class="text-start color-29b">
+                              +3.2%
+                           </td>
+                           <td class="text-start">
+                              $1.2T
+                           </td>
+                           <td class="text-start">
+                              $50B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                           <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/eth.png" alt="images">
+                                 <span>ETH</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              Ethereum
+                           </td>
+                           <td class="text-start">
+                              $3,000
+                           </td>
+                           <td class="text-start color-29b">
+                              +1.5%
+                           </td>
+                           <td class="text-start">
+                              $400B
+                           </td>
+                           <td class="text-start">
+                              $20B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                          <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/bnb.png" alt="images">
+                                 <span>BNB</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              Binance
+                           </td>
+                           <td class="text-start">
+                              $3,000
+                           </td>
+                           <td class="text-start color-ef4">
+                              -0.5%
+                           </td>
+                           <td class="text-start">
+                              $400B
+                           </td>
+                           <td class="text-start">
+                              $20B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                           <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/ecm.png" alt="images">
+                                 <span>ECM</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              ECM Coin
+                           </td>
+                           <td class="text-start">
+                              $3,000
+                           </td>
+                           <td class="text-start color-29b">
+                              -0.5%
+                           </td>
+                           <td class="text-start">
+                              $400B
+                           </td>
+                           <td class="text-start">
+                              $20B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                           <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/btc.png" alt="images">
+                                 <span>BTC</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              Bitcoin
+                           </td>
+                           <td class="text-start">
+                              $60,000
+                           </td>
+                           <td class="text-start color-29b">
+                              +3.2%
+                           </td>
+                           <td class="text-start">
+                              $1.2T
+                           </td>
+                           <td class="text-start">
+                              $50B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                           <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/eth.png" alt="images">
+                                 <span>ETH</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              Ethereum
+                           </td>
+                           <td class="text-start">
+                              $3,000
+                           </td>
+                           <td class="text-start color-29b">
+                              +1.5%
+                           </td>
+                           <td class="text-start">
+                              $400B
+                           </td>
+                           <td class="text-start">
+                              $20B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                          <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/bnb.png" alt="images">
+                                 <span>BNB</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              Binance
+                           </td>
+                           <td class="text-start">
+                              $3,000
+                           </td>
+                           <td class="text-start color-ef4">
+                              -0.5%
+                           </td>
+                           <td class="text-start">
+                              $400B
+                           </td>
+                           <td class="text-start">
+                              $20B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                           <tr>
+                           <td class="text-start">
+                              <div class="trading-info-logo">
+                                 <img src="assets/images/icon/ecm.png" alt="images">
+                                 <span>ECM</span>
+                              </div>
+                           </td>
+                           <td class="text-start">
+                              ECM Coin
+                           </td>
+                           <td class="text-start">
+                              $3,000
+                           </td>
+                           <td class="text-start color-29b">
+                              -0.5%
+                           </td>
+                           <td class="text-start">
+                              $400B
+                           </td>
+                           <td class="text-start">
+                              $20B
+                           </td>
+                           <td class="text-start">
+                              <a href="#" class="color-f9">Trade <span class="rotate-50 d-inline-block"><i class="fa-solid fa-arrow-right color-f9"></i></span></a>
+                           </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+          
+      </div>
+     </section>
+     
+   <section class="contact-us-section mt-100">
+      <div class="container">
+         <div class="row gy-4 gx-5 align-items-center contact-bg">
+            <div class="col-md-5">
+               <div class="common-heading-section">
+                  <h3>Get in Touch with Us</h3>
+                  <p>Reach out to us for support, inquiries, or collaboration. We’re here to assist and guide you every step.</p>
+               </div>
+            </div>
+            <div class="col-md-7">
+               <div class="contact-form">
+                  <form>
+                  <div class="row gy-4">
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <input type="text" class="form-control input-filed w-100" aria-describedby="emailHelp" placeholder="Enter your name">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <input type="email" class="form-control input-filed w-100" aria-describedby="emailHelp" placeholder="Enter your Email">
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <textarea name="" id="" placeholder="Write here..." class="input-filed w-100"></textarea>
+                     </div>
+                  </div>
+                  
+                  <div class="d-flex justify-content-center mt-30">
+                     <button type="submit" class="primary-btn">Submit <span class="rotate-50"><i class="fa-solid fa-arrow-right"></i></span></button>
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>   
+   <!-- Footer -->
+   <footer class="footer-area position-relative">
+      <div class="footer-circle zoom-animation">
+         <img src="assets/images/thumbnails/circle-1.png" alt="circle">
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="footer d-flex">
+                  <div class="footer-item support-list">
+                     <div class="footer-logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                     </div>
+                     <p class="mt-30">Discover our cryptocurrency platform featuring ICO opportunities, coin listings, tokenomics, roadmap, and a visionary team shaping blockchain's future.</p>
+                     <div class="social-menu mt-30">
+                        <h6>Follow :</h6>
+                        <ul class="d-flex align-items-center g-15 justify-content-center justify-content-xl-start">
+                           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                           <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="footer-pagination-items d-flex">
+                     <div class="footer-item footer-pagination">
+                        <h4>Quick Links</h4>
+                        <ul class="d-flex flex-column g-10 mt-20">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">ICO</a></li>
+                           <li><a href="#">Tokenomics</a></li>
+                           <li><a href="#">Roadmap</a></li>
+                           <li><a href="#">Coin Listings</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer-item footer-pagination">
+                        <h4>Contact Us</h4>
+                        <ul class="d-flex flex-column g-10 mt-20">
+                           <li>
+                              <a href="mailto:info@cryptoexample.com">Email: info@cryptoexample.com </a>
+                           </li>
+                           <li>
+                              <a href="tel:+2 54 532 245">Phone: +2 54 532 245</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="line-1 mt-50"></div>
+               <div class="footer-bottom d-flex align-items-center justify-content-center mt-20 mb-20 flex-wrap">
+                  <p>&copy; 2024 Crypto. All Rights Reserved</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.1.4/r-3.0.2/datatables.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="assets/js/main.js"></script>
+   
+</body>
+
+</html>
