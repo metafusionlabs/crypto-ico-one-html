@@ -815,6 +815,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, tabl
   top: 40%;
   right: 0;
  }
+ .modal {
+  top: 10%;
+  backdrop-filter: blur(15px);
+ }
  
  .data-show-table thead tr th{
   background: #FFD7001A;
