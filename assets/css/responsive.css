@@ -29,9 +29,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .support-list {
-    width: 100%;
-  }
   .header-right {
     margin-top: 40px;
     padding-bottom: 40px;
@@ -39,9 +36,18 @@
   .navbar-nav{
     margin-top: 30px;
   }
+  .footer-circle {
+    opacity: 0.3;
+  }
  
 }
 @media screen and (max-width: 991px) {
+  .footer-logo {
+    text-align: center;
+  }
+  .support-list {
+    flex-basis: 75%;
+  }
   .roadmap-item{
     border-radius:100px 10px 10px 100px;
   }
@@ -106,9 +112,23 @@
   .footer-area {
     padding-top: 70px;
   }
-   
+  .contact-us-section{
+    margin-bottom: 0;
+  }
+  .ico-circle-box img{
+    width: 100%;
+  }
+  .ico-circle-box {
+    top: -8%;
+  }
 }
 @media screen and (max-width:767px) {
+  .footer-pagination-items {
+    gap: 35px;
+  }
+  .footer-pagination{
+    width: 50%;
+  }
   .roadmap-item{
     flex-wrap: wrap;
     justify-content: center;
@@ -178,9 +198,25 @@
   p{
     font-size: 16px;
   }
+  .roadmap-section {
+    padding-left:20px;
+    padding-right: 10px;
+  }
+  .ellipse{
+    width:300px;
+  }
 
 }
 @media screen and (max-width:480px) {
+  .about-us-thumbnail img{
+    margin-left: 0;
+  }
+  .roadmap-item::before {
+    top: -26px;
+  }
+  .footer-pagination-items {
+    gap: 0px;
+  }
   .footer-bottom {
     gap: 10px;
   }
