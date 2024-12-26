@@ -1083,6 +1083,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, tabl
   margin-bottom: -180px;
   position: relative;
   z-index: 9;
+  margin-top: 160px;
  }
  .zoom-animation {
 	animation: zoomIn 2s infinite ease-in-out alternate;
