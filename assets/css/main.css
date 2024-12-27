@@ -6,6 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   background-color:#0A0A0A;
+  overflow-x: hidden;
    
 }
 h1,h2,h3,h4,h5,h6{
@@ -18,6 +19,9 @@ button{
   background-color: transparent;
   outline:none;
   
+}
+.header-right .primary-btn.nav-link.active{
+  color:#fff !important;
 }
  .input-group input{
   outline: none;
@@ -454,6 +458,9 @@ a.nav-link.dropdown-toggle i{
  .nav-link.active{
   color:#DFCD41 !important;
  }
+ .nav-link{
+  cursor: pointer;
+ }
  .contact-bg{
   background: url('../images/bg/bg-2.png');
   background-size: cover;
@@ -860,7 +867,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, tabl
   background-color:#131313;
 }
 .roadmap-item::before {
-	height: 140px;
+	height: 146px;
 	width: 215px;
 	content: "";
 	position: absolute;
@@ -876,7 +883,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control::before, tabl
 	width:88%;
 	content: "";
 	position: absolute;
-	bottom: -20px;
+	bottom: -22px;
 	left:-20px;
 	background-color: #FFD700;
 	border-radius:0px 10px 0px 200px;

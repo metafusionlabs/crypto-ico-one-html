@@ -36,30 +36,27 @@
                <div class="collapse navbar-collapse" id="navbarText">
                   <ul class="navbar-nav mx-auto nav-bg" id="outside-click">
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" data-target="home">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">ICO</a>
-                     </li>
-                      
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tokenomics</a>
+                        <a class="nav-link" data-target="ico">ICO</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Roadmap</a>
+                        <a class="nav-link" data-target="tokenomics">Tokenomics</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Coin Listings</a>
+                        <a class="nav-link" data-target="roadmap">Roadmap</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" data-target="coin-list">Coin Listings</a>
                      </li>
-                     
+                     <li class="nav-item">
+                        <a class="nav-link" data-target="contact">Contact</a>
+                     </li>
                   </ul>
                     
                   <div class="header-right d-flex align-items-center">
-                      
-                     <a href="#" class="primary-btn">Connect Wallet</a>
+                     <a data-target="ico" class="primary-btn nav-link">Connect Wallet</a>
                   </div>
                </div>
             </div>
@@ -69,7 +66,7 @@
  
       <!-- Header End -->
       <!-- Hero Start-->
-      <section class="hero-section position-relative">
+      <section class="hero-section position-relative" id="home">
          <div class="ellipse ellipse-1"></div>
          <div class="ellipse ellipse-2"></div>
          <div class="container">
@@ -137,7 +134,7 @@
          </div>
       </section>
       <!-- Hero End -->
-       <section class="ico-section mt-100 position-relative">
+       <section class="ico-section mt-100 position-relative" id="ico">
          <div class="ellipse ellipse-6"></div>
          <div class="ico-circle-box">
             <img src="assets/images/bg/circle.png" alt="image" class="rotate-box">
@@ -257,7 +254,7 @@
             </div>
          </div>
       </section>
-      <section class="tokenomics-section mt-100 bg-animation">
+      <section class="tokenomics-section mt-100 bg-animation" id="tokenomics">
          <div class="container">
             <div class="row align-items-center gy-4">
                <div class="col-lg-6">
@@ -307,7 +304,7 @@
             </div>
          </div>
       </section>
-      <section class="roadmap-section mt-100 position-relative">
+      <section class="roadmap-section mt-100 position-relative" id="roadmap">
          <div class="ellipse ellipse-7"></div>
          <div class="ellipse ellipse-8"></div>
          <div class="container">
@@ -512,7 +509,7 @@
             </div>
          </div>
       </section>
-     <section class="trade-info-section mt-100 position-relative">
+     <section class="trade-info-section mt-100 position-relative" id="coin-list">
       <div class="ellipse ellipse-3"></div>
       <div class="ellipse ellipse-4"></div>
       <div class="ellipse ellipse-5"></div>
@@ -760,7 +757,7 @@
       </div>
      </section>
      
-   <section class="contact-us-section">
+   <section class="contact-us-section" id="contact">
       <div class="container">
          <div class="row gy-5 gx-5 align-items-center contact-bg">
             <div class="col-lg-5 offset-md-1 offset-lg-0 col-md-10">
