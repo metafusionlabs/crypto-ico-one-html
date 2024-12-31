@@ -23,6 +23,9 @@ button{
 .primary-btn.nav-link.active{
   color:#fff !important;
 }
+.border-1{
+  border: 1px solid #FFD700 !important;
+}
  .input-group input{
   outline: none;
   border: none;
