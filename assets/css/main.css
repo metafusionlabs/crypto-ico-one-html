@@ -20,8 +20,9 @@ button{
   outline:none;
   
 }
-.primary-btn.nav-link.active{
-  color:#fff !important;
+.primary-btn.nav-link.active {
+	color: #000 !important;
+	background: white !important;
 }
 .border-1{
   border: 1px solid #FFD700 !important;
