@@ -300,6 +300,10 @@
   .primary-btn img, .secondary-btn img {
     width: 16px;
   }
+  .hero-thumbnails img{
+    min-height:305px;
+    object-fit: cover;
+  }
 }
 
 
