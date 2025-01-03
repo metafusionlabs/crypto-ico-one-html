@@ -53,9 +53,22 @@
   }
   .roadmap-item::before {
     height: 250px;
+    border-radius: 106px 10px 0px 110px;
+  }
+  .roadmap-item::after {
+    left: -19px;
   }
   .roadmap-list {
     width: 80%;
+  }
+  .roadmap-circle{
+    margin-right: 18px;
+  }
+  .roadmap-area .roadmap-item:nth-child(even):before{
+    background-color: #13CC73;
+    left: inherit;
+    right: -28px;
+    border-radius: 0px 125px 30px 0;
   }
   .common-heading-section h2 {
     font-size: 40px;
@@ -121,8 +134,31 @@
   .ico-circle-box {
     top: -8%;
   }
+  .footer-circle img{
+    width:80%;
+  }
+  @keyframes zoomBackground {
+    0% {
+      background-size:90% 90%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+  .tokenomics-thumbnail{
+    text-align: center;
+  }
+  .ico-circle-box img,.tokenomics-thumbnail img{
+    width:70% !important;
+  }
 }
 @media screen and (max-width:767px) {
+  .roadmap-area .roadmap-item:nth-child(even):before{
+    border-radius: 0px 125px 16px 0;
+  }
+  .roadmap-item::before {
+    border-radius: 106px 10px 0px 10px;
+  }
   .footer-pagination-items {
     gap: 35px;
   }
