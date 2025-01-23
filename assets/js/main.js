@@ -45,7 +45,6 @@ function handleResize() {
     }
   });
 }
-
 // Run handleResize on page load and attach it to the resize event
 handleResize();
 window.addEventListener('resize', handleResize);
@@ -98,7 +97,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const aboutSection = document.getElementById('about');
   if (aboutSection) {
     const targetId = aboutSection.id;
-
     navLinks.forEach(link => {
       link.classList.remove('active'); // Remove active class from all links
       if (link.getAttribute('data-target') === targetId) {
@@ -107,9 +105,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   preloader.classList.add('loader-hide');
 });
-
